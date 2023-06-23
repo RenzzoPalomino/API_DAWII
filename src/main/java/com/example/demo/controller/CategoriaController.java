@@ -48,7 +48,7 @@ public class CategoriaController {
     }
     
     
-    @PostMapping("/add")
+    @PostMapping("/save")
     public Categoria guardarCategoria(@RequestBody Categoria cat){
         return this.categoriaservice.guardarCategoria(cat);
     }

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/Orden")
 public class OrdenController {
     @Autowired
-    OrdenServiceImp repo;
+    private OrdenServiceImp repo;
     
     @Autowired
     DetalleServiceImp repodetalle;

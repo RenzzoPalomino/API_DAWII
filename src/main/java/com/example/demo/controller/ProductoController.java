@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductoController {
     
     @Autowired
-    ProductoServiceImp repo;
+    private ProductoServiceImp repo;
     
     @GetMapping("/list")
     public List<Producto> obtenerCategorias(){

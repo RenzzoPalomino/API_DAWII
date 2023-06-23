@@ -19,14 +19,14 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="tb_categoriasproduct")
+@Table(name="categoria")
 public class Categoria {
      private static final long serialVersionUID=1L;
 
 	@Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "codcateg")
+	@Column(name = "cod_categoria")
 	private Integer codigo;
-	@Column(name = "nomcateg")
+	@Column(name = "nombre_categoria")
 	private String categoria;
 }
