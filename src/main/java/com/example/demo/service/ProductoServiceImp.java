@@ -47,8 +47,8 @@ public class ProductoServiceImp implements ProductoService{
 
     @Override
     @Transactional(readOnly = true)
-    public Producto encontrarProducto(Producto producto) {
-        return productodao.findById(producto.getId()).orElse(null);
+    public Optional<Producto> encontrarProducto(Integer producto) {
+        return productodao.findById(producto);
     }
 
     @Override

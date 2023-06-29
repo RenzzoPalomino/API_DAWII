@@ -15,10 +15,10 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ProductoService{
-    public List<Producto> listarproductos(); 
+    public List<Producto> listarproductos(); /**/
     public void guardarProducto(Producto producto);
     public boolean eliminarProductoPorID(Integer id);
     public boolean eliminarProducto(Producto producto);
-    public Producto encontrarProducto(Producto producto);
+    public Optional<Producto> encontrarProducto(Integer id);/**/
     public Optional<Producto> get(Integer id);
 }
